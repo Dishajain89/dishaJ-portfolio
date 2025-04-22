@@ -1,0 +1,42 @@
+@import "../../public/styles/partials/variables";
+.footer {
+    background-color: $primary-darker;
+    color: #ffffff;
+    border-top: 1px solid #1e1e1e;
+    text-align: center;
+  }
+  .divider{
+    border: 1px solid $secondray-text;
+  }
+  .footerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+  }
+  
+  .tagline {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #cccccc;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+  
+  .socialIcons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 1.6rem;
+  }
+  
+  .socialIcons a {
+    color: #00ffe7;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .socialIcons a:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+  }
+  

@@ -1,0 +1,142 @@
+// $primary-color: hotpink;
+$primary-color: #c2185b;
+$bg-color: black;
+
+.banner {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(135deg,$bg-color , $primary-color);
+  // background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+//    flex-direction: row-reverse;
+    // max-width: 1200px;
+    // width: 100%;
+    padding: 0 20px;
+    // border: 1px solid red;
+
+    .textSection {
+    //   flex: 1;
+    .greet{
+        font-size: 2rem;
+        color: #ffb74d;
+    }
+      .name {
+        font-size: 3rem;
+        margin-bottom: 10px;
+        color: #ff80ab;
+        text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+      }
+      .role{
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+    }
+
+    .image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      border: 2px solid red;
+
+      image{
+        width: 100%;
+        height: 100%;
+        border: 3px solid red;
+      }
+    }
+
+    .animatedImage {
+      animation: bounce 2s infinite;
+    }
+
+
+   
+  }
+}
+
+// Navbar Styles
+.navbar {
+  position: fixed;
+  top: -60px;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 1rem 6rem;
+  text-align: center;
+  transition: top 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+
+  &.visible {
+    top: 0;
+  }
+  .navList{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+
+    li{
+        list-style: none;
+    }
+  }
+}
+
+// Animation for the developer image
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+
+
+.neonBorder {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 12px;
+  border: 3px solid red;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px; left: -5px; right: -5px; bottom: -5px;
+    background: linear-gradient(270deg, #00f0ff, #ff00e0, #00f0ff);
+    background-size: 600% 600%;
+    border-radius: 14px;
+    z-index: 0;
+    animation: neon-glow 5s linear infinite;
+    filter: blur(10px);
+  }
+
+  .neonImage {
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+    display: block;
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@keyframes neon-glow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}

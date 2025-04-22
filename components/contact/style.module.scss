@@ -1,0 +1,82 @@
+@import "../../public/styles/partials/variables";
+
+.contactSection {
+    background-color: $primary-darker;
+    color: $white;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: $primary-text;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  
+  .subText {
+    font-size: 1.1rem;
+    color: $secondray-text;
+    margin-bottom: 50px;
+  }
+  
+  .form {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form input,
+  .form textarea {
+    background: $secondray-color;
+    border: 1px solid #2c2c2c;
+    border-radius: 10px;
+    padding: 15px 20px;
+    color: $white;
+    font-size: 1rem;
+    outline: none;
+    resize: none;
+  }
+  
+  .form input::placeholder,
+  .form textarea::placeholder {
+    color: #888;
+  }
+  
+  .form button {
+    background-color: $primary-text;
+    color: $secondray-color;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form button:hover {
+    background-color: #00cfc7;
+  }
+  
+  .socials {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 1.8rem;
+  }
+  
+  .socials a {
+    color: $primary-text;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .socials a:hover {
+    color: #ffffff;
+    transform: scale(1.1);
+  }
+  

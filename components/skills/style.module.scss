@@ -1,0 +1,57 @@
+@import "../../public/styles/partials/variables";
+.skillsSection {
+    padding: 80px 20px;
+    background: $theme-gradient;
+    color: $white;
+    text-align: center;
+  }
+  
+  .sectionTitle {
+    font-size: 2.8rem;
+    margin-bottom: 60px;
+    color: $white;
+    font-weight: bold;
+  }
+  
+  .skillsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .skillCard {
+    background: $secondray-color;
+    padding: 25px 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.04);
+    transition: all 0.3s ease;
+    position: relative;
+  
+    h4 {
+      margin-top: 12px;
+      font-size: 1.2rem;
+      font-weight: 600;
+    }
+  }
+  
+  .icon {
+    font-size: 2.5rem;
+    color: $primary-text;
+  }
+  
+  .progressBar {
+    margin-top: 12px;
+    background: #333;
+    border-radius: 8px;
+    height: 8px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    background: $primary-text;
+    height: 100%;
+    border-radius: 8px;
+  }
+  

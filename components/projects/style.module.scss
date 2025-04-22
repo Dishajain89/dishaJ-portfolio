@@ -1,0 +1,62 @@
+@import "../../public/styles/partials/variables";
+.projectsSection {
+    padding: 80px 20px;
+    background: $secondray-color;
+    color: $white;
+    text-align: center;
+  }
+  
+  .sectionTitle {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: $primary-text;
+  }
+  .sectionSubtitle{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: $secondray-text;
+    margin-bottom: 60px;
+  }
+  .projectsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .card {
+    background:$primary-darker;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .projectImage {
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 0.95rem;
+    color: $secondray-text;
+    margin-bottom: 10px;
+  }
+  
+  .link {
+    color: $primary-text;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: auto;
+  }
+  

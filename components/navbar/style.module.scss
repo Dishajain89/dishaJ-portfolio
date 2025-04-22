@@ -1,0 +1,104 @@
+@import "../../public/styles/partials/variables";
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.2rem 2rem;
+  z-index: 100;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+
+  &.scrolled {
+    background-color: $primary-darker;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $primary-text;
+    text-decoration: none;
+  }
+
+  .navLinks {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+
+    li a {
+      text-decoration: none;
+      color: $secondray-text;
+      font-weight: 500;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $primary-text;
+      }
+    }
+
+    .resumeBtn {
+      border: 1px solid $primary-text;
+      padding: 0.5rem 1rem;
+      border-radius: 1.2rem;
+      color: $primary-text;
+      transition: background 0.3s ease;
+
+      &:hover {
+        background: $primary-text;
+        color: $black;
+      }
+    }
+  }
+
+  .mobileToggle {
+    display: none;
+    font-size: 1.5rem;
+    color: $primary-text;
+    cursor: pointer;
+  }
+
+  .mobileMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: $primary-darker;
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    list-style: none;
+    z-index: 999;
+
+    li a {
+      color: $white;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: $primary-text;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .navLinks {
+      display: none;
+    }
+
+    .mobileToggle {
+      display: block;
+    }
+  }
+}
